@@ -21,10 +21,10 @@ class Genre
     @@all.clear
   end
 
-  # def self.create(name)
-  #   discovery = Genre.new(name)
-  #   discovery.save
-  #   discovery
-  # end
+  def self.create(name)
+    discovery = Genre.new(name)
+    discovery.save
+    discovery
+  end
 
 end
