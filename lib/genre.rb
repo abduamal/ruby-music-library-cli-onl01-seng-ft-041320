@@ -27,4 +27,8 @@ class Genre
     discovery
   end
 
+  def songs
+    @songs
+  end
+
 end
