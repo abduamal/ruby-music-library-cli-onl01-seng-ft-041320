@@ -47,4 +47,7 @@ class Song
     @genre = genre
     genre.songs.push self unless genre.songs.include? self
   end
+
+  def find_by_name
+    Song.all.select { ||}
 end
