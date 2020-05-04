@@ -1,5 +1,5 @@
 class Song
-  attr_accessor :name
+  attr_accessor :name, :musicimporter, :musiclibrarycontroller
 
   attr_reader :artist, :genre
 
@@ -70,5 +70,5 @@ class Song
   def self.create_from_filename(filename)
     self.new_from_filename(filename).save
   end
-  
+
 end
