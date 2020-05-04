@@ -21,10 +21,10 @@ class Artist
     @@all.clear
   end
 
-  # def self.create(title)
-  #   created_song = Song.new(title)
-  #   created_song.save
-  #   created_song
-  # end
+  def self.create(name)
+    discovery = Artist.new(name)
+    discovery.save
+    discovery
+  end
 
 end
