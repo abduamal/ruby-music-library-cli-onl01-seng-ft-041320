@@ -21,4 +21,10 @@ class Song
     @@all.clear
   end
 
+  def create
+    created_song = Song.new
+    created_song.save
+    created_song
+  end
+  
 end
