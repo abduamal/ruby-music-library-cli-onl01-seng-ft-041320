@@ -1,6 +1,7 @@
 class Genre
   attr_accessor :name
   attr_reader :songs
+  extend Concerns::Findable
 
   @@all = []
 
@@ -31,7 +32,7 @@ class Genre
   def songs
     @songs
   end
-  
+
   def artists
     @new_array = []
     @songs.each do |song|
