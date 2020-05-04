@@ -24,8 +24,8 @@ class Song
     @@all.clear
   end
 
-  def self.create(title)
-    created_song = Song.new(title)
+  def self.create(name)
+    created_song = Song.new(name)
     created_song.save
     created_song
   end
@@ -55,7 +55,7 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    self.find_by_name(name) || self.create(name)    
+    self.find_by_name(name) || self.create(name)
   end
 
 end
