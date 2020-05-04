@@ -34,22 +34,11 @@ class Artist
   end
 
   def add_song(song)
-    if song.artist == nil
-      song.artist = self
-    else
-      nil
-    end
-    if @songs.include?(song)
-      nil
-    else
-      @songs << song
-    end
-
-    song
+    Song.all.select {|song| song.artist == self}
   end
 
   def genres
-    songs.select { |song| song.artist == self }
+    add_song.select { |genre| genre.artist == self }
   end
 
 end
