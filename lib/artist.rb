@@ -1,4 +1,4 @@
-class Song
+class Artist
   attr_accessor :name
 
   @@all = []
@@ -21,10 +21,10 @@ class Song
     @@all.clear
   end
 
-  def self.create(title)
-    created_song = Song.new(title)
-    created_song.save
-    created_song
-  end
+  # def self.create(title)
+  #   created_song = Song.new(title)
+  #   created_song.save
+  #   created_song
+  # end
 
 end
